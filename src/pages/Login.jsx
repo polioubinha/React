@@ -46,7 +46,7 @@ function Login() {
       setEmailError("Por favor, introduce un email válido.");
       return;
     } else {
-      setEmailError(""); // Limpiar el mensaje de error si el email es válido
+      setEmailError(""); 
     }
 
     const isLoggedIn = login(email, password);
@@ -62,8 +62,8 @@ function Login() {
   };
 
   const handleClose = () => {
-    setIsVisible(false); // Cambia el estado a false para iniciar la animación de ocultación
-    setTimeout(() => setLoginError(false), 400); // Elimina el error después de la animación (0.4s)
+    setIsVisible(false);
+    setTimeout(() => setLoginError(false), 400); 
   };
 
   return (
@@ -155,8 +155,8 @@ function Login() {
                   fullWidth
                   size="small"
                   margin="normal"
-                  error={!!emailError} // Muestra error visual si el estado de error tiene contenido
-                  helperText={emailError} // Muestra el mensaje de error debajo del campo
+                  error={!!emailError}
+                  helperText={emailError} 
                 />
               </div>
               <div className="password">

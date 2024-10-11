@@ -5,10 +5,9 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter> {/* Cambia Router por BrowserRouter */}
+    <BrowserRouter> {}
       <Routes>
         <Route path="/" element={<Login />} />
-        {/* Agrega aquí más rutas según sea necesario */}
       </Routes>
     </BrowserRouter>
   );

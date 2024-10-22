@@ -1,0 +1,84 @@
+.layout_root{
+    display: flex;
+    flex: 1 1 auto;
+    min-height: 100%;
+    flex-direction: column;
+
+    .loginPage{
+        display: flex;
+
+        flex: 1 1 auto;
+        min-height: 100vh;
+    
+        .imageBox{
+            padding: 2rem;
+            background-color: #fcfafa;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+    
+            .imageText{
+                text-align: center;
+                
+                h3{
+                    font-weight: 700;
+                    font-size: 26px;
+                }
+    
+                p{
+                    font-size: 14px;
+                    color:var(--primary);
+                }
+            }
+        }
+    
+        .loginBox{
+            padding: 80px 16px;
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            .formBox{
+                width: 100%;
+                max-width: 420px;
+                display: flex;
+                gap: 20px;
+                flex-direction: column;
+
+                .error_message {
+                    display: flex;
+                    align-items: center;
+                    padding: 16px; // Espaciado interno
+                    background-color: #ffebee; // Fondo ligero para el mensaje de error
+                    border-radius: 8px; // Bordes redondeados
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); // Sombra ligera
+                  
+                    .icon {
+                      color: #ff5630; // Color rojo para el ícono
+                      margin-right: 8px; // Espacio entre el ícono y el texto
+                      font-size: 24px; // Tamaño del ícono
+                    }
+                  
+                    .text {
+                      color: #ff5630; // Color rojo para el texto del mensaje de error
+                      font-size: 16px; // Tamaño de la fuente del texto
+                      font-family: 'Public Sans', sans-serif; // Fuente personalizada
+                    }
+                  }
+
+                .formControlBox{
+                    gap: 20px;
+                    display: flex;
+                    flex-direction: column;
+
+                    button{
+                        background-color: #1c252e;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.layout_dashboard{
+    display: flex;
+    flex: 1 1 auto;
+    margin: 20px;
+    flex-direction: column;
+
+    .banner_welcome, .cta_top{
+        display: flex;
+        flex-direction: row;
+        border-radius: 16px;
+        gap: 10px;
+        height: 100%;
+        background-color: aquamarine;
+        padding: 60px 40px;
+    }
+
+}

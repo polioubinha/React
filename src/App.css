@@ -8,7 +8,7 @@ body{
   margin: 0;
   padding: 0;
   overflow: auto;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans";
   display: flex;
   flex: 1 1 auto;
   min-height: 100%;

@@ -1,17 +1,20 @@
+:root{
+    --Grid-columns: 12;
+    --Grid-columnSpacing: 24px;
+    --Grid-rowSpacing:24px;
+}
+
 .layout_dashboard{
     display: flex;
     flex: 1 1 auto;
     margin: 20px;
     flex-direction: column;
 
-    .banner_welcome, .cta_top{
-        display: flex;
-        flex-direction: row;
-        border-radius: 16px;
-        gap: 10px;
-        height: 100%;
-        background-color: aquamarine;
-        padding: 60px 40px;
+    ._gridCard {
+        box-sizing: border-box;
+        min-width: 0;
+        flex-grow: 0;
+        flex-basis: auto;
+        padding: calc(var(--Grid-rowSpacing) / 2) calc(var(--Grid-columnSpacing) / 2);
     }
-
 }

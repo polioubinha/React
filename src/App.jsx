@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import "@fontsource/public-sans";
 import { AuthProvider } from "./contexts/AuthContext";
 import Login from "./pages/Login/Login";
 import { ThemeProvider } from "@emotion/react";

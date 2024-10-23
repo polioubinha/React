@@ -79,7 +79,8 @@ const darkPalette = {
 const lightTheme = createTheme({
   palette: lightPalette,
   typography: {
-    fontWeightLight: 700,
+    fontFamily: 'Public Sans',
+    fontWeightBold: 700,
     h1: {
       fontSize: 30,
     },
@@ -104,7 +105,8 @@ const lightTheme = createTheme({
 const darkTheme = createTheme({
   palette: darkPalette,
   typography: {
-    fontWeightLight: 700,
+    fontFamily: 'Public Sans',
+    fontWeightBold: 700,
     h1: {
       fontSize: 30,
     },

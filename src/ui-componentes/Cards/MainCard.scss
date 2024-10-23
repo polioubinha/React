@@ -1,0 +1,54 @@
+
+
+.banner_welcome{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('/src/assets/jpg/card_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+    flex-direction: row;
+    border-radius: 16px;
+    gap: 40px;
+    padding: 40px;
+    height: 100%;
+
+    ._cardText{
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: column;
+
+        h4{
+            font-weight: 700;
+            white-space: pre-line;
+            line-height: 1.5;
+            margin: 0 0 8px;
+            max-width: 240px;
+        }
+
+        p{
+            margin: 0 0 24px;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 1.5;
+            opacity: 0.64;
+            color: white;
+            max-width: 360px;
+        }
+
+        button{
+            max-width: 100px;
+        }
+    }
+
+    .cardImage{
+        img{
+            max-width: 100%;
+            width: 170px;
+            height: auto;
+            flex-shrink: 0;
+            display: flex;
+        }
+    }
+}

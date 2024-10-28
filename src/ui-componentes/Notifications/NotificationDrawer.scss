@@ -1,0 +1,64 @@
+._notificationDrawer{
+    transition: transform 225ms cubic-bezier(0,0,0.2,1);
+    transform: none;
+
+    ._notificationBox{
+        background-color: rgba(255,255,255,0.9);
+        background-image: url('/src/assets/png/cyan-blur.png'), url('/src/assets/png/red-blur.png');
+        background-repeat: no-repeat, no-repeat;
+        background-size: 50%, 50%;
+        box-shadow: -40px 40px 60px 8px rgba(145,158,171,0.24);
+        background-position: right top, left bottom;
+        color: #1c252e;
+        
+        ._titleStack{
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            padding: 16px 8px 16px 20px !important;
+            min-height: 68px !important;
+        }
+    
+        ._notificationsTabs{
+            overflow: hidden;
+            display: flex;
+            min-height: 38px;
+            flex-shrink: 0;
+            align-items: center;
+            background-color: #fefefe !important;
+    
+            & .MuiTabs-scroller{
+                position: relative;
+                display: inline-block;
+                flex: 1 1 auto;
+                white-space: nowrap;
+                overflow-x: hidden;
+                width: 100%;
+                padding: 8px;
+    
+                & .MuiTabs-flexContainer{
+                    display: flex;
+                    gap: 0px;
+    
+                    & .MuiTab-root{
+                        padding: 8px 16px;
+                        z-index: 1;
+                        min-height: auto;
+    
+                    }
+                    & .Mui-selected{
+                        border-radius: 5px;
+                    }
+    
+                }
+
+                & .MuiTabs-indicator{
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    height: 100%;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
